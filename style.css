@@ -1,0 +1,374 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background: #f5f7fa;
+    color: #172b4d;
+    line-height: 1.6;
+}
+
+header {
+    background: #102a43;
+    color: white;
+    padding: 25px 8%;
+}
+
+header h2 {
+    font-size: 28px;
+}
+
+header h2 span {
+    color: #35c9a5;
+}
+
+header p {
+    color: #b8c7d9;
+    font-size: 12px;
+    letter-spacing: 3px;
+}
+
+.hero {
+    min-height: 430px;
+    padding: 100px 8%;
+    background: linear-gradient(120deg, #102a43, #176b78);
+    color: white;
+}
+
+.hero h1 {
+    font-size: 48px;
+    max-width: 650px;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    max-width: 550px;
+    margin-bottom: 30px;
+    color: #e0edf2;
+}
+
+.btn {
+    display: inline-block;
+    background: #35c9a5;
+    color: #102a43;
+    padding: 13px 24px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-weight: bold;
+}
+
+.btn:hover {
+    background: white;
+}
+
+#profile {
+    padding: 70px 8%;
+    text-align: center;
+}
+
+#profile h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#profile p {
+    max-width: 600px;
+    margin: auto;
+    color: #526579;
+}
+
+footer {
+    background: #102a43;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 600px) {
+    .hero h1 {
+        font-size: 36px;
+    }
+}
+#skillsForm {
+    max-width: 600px;
+    margin: 35px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#skillsForm input,
+#skillsForm textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d5dce5;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#skillsForm textarea {
+    min-height: 120px;
+    resize: vertical;
+}
+
+#skillsForm button {
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+#profileResult {
+    max-width: 600px;
+    margin: 25px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    text-align: left;
+    overflow-wrap: anywhere;
+}
+
+#profileResult h3 {
+    color: #176b78;
+    margin-bottom: 15px;
+}
+
+#profileResult p {
+    margin: 10px 0;
+}
+#evidence {
+    padding: 70px 8%;
+    text-align: center;
+    background: #edf2f7;
+}
+
+#evidence h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+#evidenceForm {
+    max-width: 600px;
+    margin: 35px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+#evidenceForm input,
+#evidenceForm select,
+#evidenceForm textarea {
+    width: 100%;
+    padding: 15px;
+    border: 1px solid #d5dce5;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: Arial, sans-serif;
+}
+
+#evidenceForm textarea {
+    min-height: 120px;
+}
+
+#evidenceForm button {
+    border: none;
+    cursor: pointer;
+}
+
+.evidence-card {
+    max-width: 600px;
+    margin: 15px auto;
+    padding: 20px;
+    background: white;
+    border-radius: 8px;
+    text-align: left;
+    border-left: 5px solid #35c9a5;
+    overflow-wrap: anywhere;
+}
+
+.evidence-card h4 {
+    color: #176b78;
+    margin-bottom: 10px;
+}
+
+.evidence-card p {
+    margin: 8px 0;
+}
+#opportunities {
+    padding: 70px 8%;
+    text-align: center;
+    background: #f5f7fa;
+}
+
+#opportunities h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.opportunity-container {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 25px;
+    max-width: 1000px;
+    margin: 40px auto;
+}
+
+.opportunity-card {
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+    text-align: left;
+    border: 1px solid #e0e6ed;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05);
+}
+
+.opportunity-card h3 {
+    color: #176b78;
+    margin-bottom: 12px;
+}
+
+.opportunity-card p {
+    color: #526579;
+    margin-bottom: 15px;
+}
+
+.opportunity-card span {
+    display: inline-block;
+    color: #176b78;
+    font-weight: bold;
+    font-size: 13px;
+}
+
+.notice {
+    max-width: 750px;
+    margin: 20px auto;
+    color: #526579;
+    font-size: 13px;
+}
+
+@media (max-width: 650px) {
+    .opportunity-container {
+        grid-template-columns: 1fr;
+    }
+}
+#readiness {
+    padding: 70px 8%;
+    text-align: center;
+    background: #ffffff;
+}
+
+#readiness h2 {
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.readiness-container {
+    max-width: 650px;
+    margin: 35px auto;
+    padding: 25px;
+    background: #f5f7fa;
+    border-radius: 10px;
+    text-align: left;
+}
+
+.readiness-container label {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding: 15px 5px;
+    border-bottom: 1px solid #dce3eb;
+    cursor: pointer;
+}
+
+.readiness-container input {
+    width: 18px;
+    height: 18px;
+    accent-color: #176b78;
+}
+
+.readiness-note {
+    color: #526579;
+    font-size: 14px;
+}
+.header-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 25px;
+}
+
+nav {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #35c9a5;
+}
+
+section {
+    scroll-margin-top: 20px;
+}
+
+@media (max-width: 800px) {
+    .header-content {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav {
+        gap: 12px;
+    }
+}
+
+@media (max-width: 500px) {
+    nav {
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+/* PRIVACY AND DATA CONTROLS */
+
+.privacy-controls {
+    margin-top: 30px;
+    padding: 20px;
+    background: #ffffff;
+    border: 1px solid #dce3e9;
+    border-radius: 10px;
+    text-align: center;
+}
+
+.privacy-controls p {
+    margin-bottom: 15px;
+    color: #52606d;
+}
+
+#deleteDataBtn {
+    background: #d9534f;
+    color: white;
+    border: none;
+    padding: 12px 20px;
+    border-radius: 6px;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+#deleteDataBtn:hover {
+    background: #b52b27;
+}

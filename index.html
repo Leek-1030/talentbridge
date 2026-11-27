@@ -1,0 +1,158 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TALENTBRIDGE | Skills Without Borders</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <header>
+        <div class="header-content">
+            <div>
+                <h2>TALENTBRIDGE<span>.</span></h2>
+                <p>SKILLS WITHOUT BORDERS</p>
+            </div>
+    
+            <nav>
+                <a href="#profile">Skills Passport</a>
+                <a href="#evidence">Evidence Wallet</a>
+                <a href="#opportunities">Opportunities</a>
+                <a href="#readiness">Career Readiness</a>
+            </nav>
+        </div>
+    </header>
+    <main>
+        <section class="hero">
+            <h1>Your Talent Has No Borders.</h1>
+            <p>
+                Connecting displaced talent to opportunities,
+                mentorship and a brighter professional future.
+            </p>
+            <a href="#profile" class="btn">Build Your Skills Passport</a>
+        </section>
+
+        <!-- SKILLS PASSPORT -->
+        <section id="profile">
+            <h2>Your Skills Passport</h2>
+            <p>Showcase your talent, education and professional experience.</p>
+
+            <form id="skillsForm">
+                <input type="text" id="fullName" placeholder="Your full name" required>
+                <input type="text" id="skills" placeholder="Your skills (e.g. Digital Marketing)" required>
+                <input type="text" id="education" placeholder="Your education">
+                <textarea id="experience" placeholder="Describe your experience"></textarea>
+                <button type="submit" class="btn">Save My Skills Passport</button>
+            </form>
+
+            <div id="profileResult"></div>
+        </section>
+
+        <!-- EVIDENCE WALLET -->
+        <section id="evidence">
+            <h2>Evidence Wallet</h2>
+            <p>Show evidence of your skills, achievements and experience.</p>
+
+            <form id="evidenceForm">
+                <input type="text" id="evidenceTitle" placeholder="Certificate or project title" required>
+
+                <select id="evidenceType" required>
+                    <option value="">Choose evidence type</option>
+                    <option value="Certificate">Certificate</option>
+                    <option value="Portfolio Project">Portfolio Project</option>
+                    <option value="Work Experience">Work Experience</option>
+                </select>
+
+                <textarea id="evidenceDescription" placeholder="Describe your evidence" required></textarea>
+
+                <button type="submit" class="btn">Add Evidence</button>
+            </form>
+
+            <div id="evidenceList"></div>
+        </section>
+        <!-- OPPORTUNITY HUB -->
+        <section id="opportunities">
+            <h2>Opportunity Hub</h2>
+            <p>Discover pathways to develop your skills and career.</p>
+
+            <div class="opportunity-container">
+
+                <div class="opportunity-card">
+                    <h3>Career Mentorship</h3>
+                    <p>Connect with experienced professionals who can guide your career journey.</p>
+                    <span>Category: Mentorship</span>
+                </div>
+
+                <div class="opportunity-card">
+                    <h3>Digital Skills Training</h3>
+                    <p>Improve your digital skills through learning and practical projects.</p>
+                    <span>Category: Training</span>
+                </div>
+
+                <div class="opportunity-card">
+                    <h3>Professional Fellowship</h3>
+                    <p>Explore opportunities to gain professional exposure and experience.</p>
+                    <span>Category: Fellowship</span>
+                </div>
+
+                <div class="opportunity-card">
+                    <h3>Employment Pathways</h3>
+                    <p>Discover guidance and resources for accessing suitable employment.</p>
+                    <span>Category: Employment</span>
+                </div>
+
+            </div>
+
+            <p class="notice">
+                Note: These are illustrative opportunities for this prototype,
+                not verified or currently open vacancies.
+            </p>
+        </section>
+        <!-- CAREER READINESS -->
+<section id="readiness">
+    <h2>Career Readiness Checklist</h2>
+    <p>Prepare yourself for professional opportunities.</p>
+
+    <div class="readiness-container">
+        <label>
+            <input type="checkbox"> I have created my Skills Passport.
+        </label>
+
+        <label>
+            <input type="checkbox"> I have added my certificates or projects.
+        </label>
+
+        <label>
+            <input type="checkbox"> I have prepared my CV or portfolio.
+        </label>
+
+        <label>
+            <input type="checkbox"> I have identified my career goals.
+        </label>
+
+        <label>
+            <input type="checkbox"> I have researched relevant opportunities.
+        </label>
+    </div>
+
+    <p class="readiness-note">
+        Your progress is personal. Complete these steps at your own pace.
+    </p>
+    <div class="privacy-controls">
+        <p>Your information is stored locally in this browser.</p>
+        <button type="button" id="deleteDataBtn">
+            Delete My Saved Data
+        </button>
+    </div>
+</section>
+    </main>
+
+    <footer>
+        <p>© 2026 TALENTBRIDGE. Skills Without Borders.</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
